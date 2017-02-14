@@ -10,7 +10,6 @@ body{
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color:#FFF8EB;
 }
 a:hover{text-decoration: none; cursor:pointer;}
 
@@ -61,6 +60,30 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
+/* Background Textures */
+
+.bloc-bg-texture::before{
+	content:"";
+	background-size: 2px 2px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+.texture-geometry-shapes::before{
+	background: url("img/texture-geometry-shapes.png");
+	background-size: 280px 280px;
+}
+
+
+/* Background Effects */
+
+.b-parallax{
+	background-attachment:fixed;
+}
+
+
 /* Light theme */
 
 .d-bloc .panel,.l-bloc{
@@ -101,6 +124,13 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	font-family: 'Berkshire Swash';
 	font-size: 70px;
 	line-height: 56px;
+}
+#bloc-1 h2{
+	font-family: Berkshire Swash;
+}
+#bloc-1 h3{
+	font-family: 'Berkshire Swash';
+	font-size: 22px;
 }
 #bloc-1 p{
 	font-weight: 100;
@@ -330,6 +360,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container{
 	max-width:1170px;
 }
+.h1,h2,h3,h4,h5,h6,p,label,.btn,a:hover{
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -343,6 +375,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .tc-cosmic-latte{
 	color:#FFF8EB!important;
+}
+.tc-outer-space{
+	color:#47454A!important;
 }
 
 /* Bloc image backgrounds */
